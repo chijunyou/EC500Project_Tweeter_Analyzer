@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "just-rhythm-253020",
+  "private_key_id": "65ca112f7d9b2f97cf5fbddbb0616296b7b8e19c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDdBnq7bByRc8MV\nsLU2voL+WHQDQzq03ncuLBx3oakJQy40rKHs0imshZm2Hj/skxHCg/Nh1hR9kuZY\noEdpKtJL/1JVMUUKBmwa/Bk+6aMn5y9zCEJquJmuwvhd+fuJHSEc/g4u5VKIkyfM\nVx0mVpLP0Pkpvixm/v1xH1U514muWKjqI8CK30sfJX7I3UJQSPBQ37LkhsKkFIB5\nunrwLfnETUxaOorcbSklNXdKBD0QFDVCGe2AWG6sN/bCoLtOvBlUQXO7KT9fRpyq\njm7vRi5PjvK7jjCSJFgbHdbk2ZzVXZhxYshJmqqQl9qTpUTecit9h+JiAG/XeW3W\nXvsKdKlvAgMBAAECggEALBEvJjATcBKXCjuNnckVH/Xtx3q/eTFDrNKBqH50T9Lz\nou/qZueuBGYss+lLEHVwHIqnW1HOCw1fXLs0Ea1GeX2B4lds7udB5Y1u0SLO81U+\nGh7C8zkz9uqLj10YgAltQTUMCeCR+IXycOTLfInVQpblHqP6gVyElmnLWbl2C2rm\nAHsuOoebM64tFVpUPFcMYcdhUZ5uD5WUHVqJy/5o2bJhfDx/CpqADV9Y7sHORVz6\nUvv1sjzLDi8YoR08++ZNfeTLU+ucCdWaZ5BSNzQ0qOd0jylKY3HO2/pQaPQ04oLt\nNdW5UYt29d/7Gu9mGfDX6+V+n94uIhUR0Di6+dd09QKBgQDyJ3PtanimYCQWeKw9\nuNIPLZOA4K1pCGXX1cPDAixPM4P527jXmVgz19hbVZSEETK3V5QuHMtUmhFlZdNO\ntC3CMiSd57BXAydLSpN4zzvxHxeWkH8jknPhM5fBWTKPm30fqVOy3/s9FDRp790A\n2nN+Bfy7ML/OSpduo7mpMkAoJQKBgQDpqcCXZ+BJSN4bbu7kla0JlE84bnRZa/aH\nRsfhcdjv9+ynKzsYP1vKVFcoMqV7lzlZUZ7IYzfj3q3k3qHKbXMM+6/cF2EzuM9K\nEFWFNykC1QcZHKvdZ64liusaaK2qyono3NjwGp82SdAHjyvcgQNVW02frTcmAdz5\nOfFm1ggdAwKBgH8lXgZb8EuTkX9HD1E9OPaFPLzfu825fhgNAsPi4TcY2oQX7X8u\n4hQekliqn9eUXCfOUVzA+7ZJSzcNdx0NGDWuNHHA1GNroXc0CijVzyh05eLFriwU\nWsn1WApKdnTW9KTqOKtkVbulXzv8mPM4wIl8RU5Yc22y1r5eMz72xp8NAoGBAKkw\nz1FSV+b4qkq28qf1cQwEpbA42mp9cE7Xg5fMdcacgHEzLmEKT46br1heA9EP2OjB\n3vU+UpPfA487XW9T/QCjpdz52No4sW/xj9sb68gvNCqMxi1VC5YHluDSdx259k30\ny+hffnUy0T0IADxz9lPx/qzmIY6Vvsl/mTpbNBi9AoGBAO4xICeb4rl2A9v7RZYe\nJHm7RJtv2tphNwRtsgit/BdiFRFr0yUdApn/MOiohgUWpbRYTW01/3OsOOUobhqr\nPr5nQoBk8Q9a35KqJlJsaXAUfVGb67SsNN61cW0HZWb6IqXviODZ7PbOP3BjwLIq\n7ak22ZoI2aP/XhQqmwBBRO9c\n-----END PRIVATE KEY-----\n",
+  "client_email": "minipro@just-rhythm-253020.iam.gserviceaccount.com",
+  "client_id": "116529666767482415524",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/minipro%40just-rhythm-253020.iam.gserviceaccount.com"
+}

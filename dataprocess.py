@@ -8,6 +8,7 @@ import json
 import urllib
 from urllib.request import urlopen
 import gmplot
+from chart import savechar
 def getdata(keyword):
     keys = getkeys()
     auth = tweepy.OAuthHandler(keys[0], keys[1])
@@ -31,11 +32,13 @@ def processdata(data):
             lng = geoloc[1]
         senti = 0
         try:
-            senti = int(sample_analyze_sentiment(text)*10)
+            senti = int(sample_analyze_sentiment(text)*5)
         except:
             senti = 0
         if senti is not None and geoloc is not None:
             rtn.append((lat,lng,senti))
+
+    print(rtn)
     return rtn
 
 def address(location):
@@ -67,9 +70,30 @@ def heatmap(data):
     gmap.apikey = getgooglekey()
     gmap.draw("templates/heatmap.html")
 
+def chartdata(data):
 
-if __name__== '__main__':
+    rtn = [0,0,0,0,0,0,0,0,0,0,0]
+    count = 0
+    for item in data:
+        try:
+            senti = item[2]
+            rtn[senti+5] = rtn[senti+5] + 1
+            count = count + 1
+        except:
+            count = count
+    for i in range(0,11):
+        rtn[i] = rtn[i] *100 / count
+        rtn[i] = int(rtn[i])
+        rtn[i] = str(rtn[i]) + '%'
+    return rtn
+
+def bothpro(keyword):
     rawdata = getdata("trade war")
     data = processdata(rawdata)
     heatmap(data)
+    data = chartdata(data)
+    savechar(data)
+
+if __name__== '__main__':
+    all("trade war")
     #print(address('asdfsaf'))
