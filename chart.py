@@ -83,12 +83,12 @@ def DataFrame2HistogramHtml(title,df):
     return html
     
     
-def savechar(data):
+def savechar(data,path = "templates/chart.html"):
     s1=pd.Series(np.array(["-5","-4","-3","-2","-1","0","1","2","3","4","5"]))
     s2=pd.Series(np.array(data))
     df=pd.DataFrame({"m":s1,"u":s2});
-    html=DataFrame2HistogramHtml("10.1.1.1",df)
-    f=open(r"templates/chart.html","w")
+    html=DataFrame2HistogramHtml("Sentimental Analyze",df)
+    f=open(path,"w")
 
     f.write(html)
     f.close

@@ -63,7 +63,7 @@ def address(location):
     except:
         return None
 
-def heatmap(data):
+def heatmap(data,path="templates/heatmap.html"):
     lat = list()
     lng = list()
     for item in data:
@@ -72,7 +72,7 @@ def heatmap(data):
     gmap = gmplot.GoogleMapPlotter(27, -96, 3)
     gmap.heatmap(lat, lng, radius=30)
     gmap.apikey = getgooglekey()
-    gmap.draw("templates/heatmap.html")
+    gmap.draw(path)
 
 def chartdata(data):
 
@@ -85,30 +85,32 @@ def chartdata(data):
             count = count + 1
         except:
             count = count
+    if count == 0:
+        count = 1
     for i in range(0,11):
         rtn[i] = rtn[i] *100 / count
         rtn[i] = int(rtn[i])
         rtn[i] = str(rtn[i]) + '%'
     return rtn
 
-def chartapi(keyword):
+def chartapi(keyword,path="templates/chart.html"):
     rawdata = getdata(keyword)
     data = processdata(rawdata)
     data = chartdata(data)
-    savechar(data)
+    savechar(data,path)
 
-def mapapi(keyword):
+def mapapi(keyword,path="templates/heatmap.html"):
     rawdata = getdata(keyword)
     data = processdata(rawdata)
-    heatmap(data)
+    heatmap(data,path)
 
 
-def bothpro(keyword):
+def bothpro(keyword,path = "templates"):
     rawdata = getdata(keyword)
     data = processdata(rawdata)
-    heatmap(data)
+    heatmap(data,path+"/heatmap.html")
     data = chartdata(data)
-    savechar(data)
+    savechar(data,path+"/chart.html")
 
 if __name__== '__main__':
     bothpro("trade war")
