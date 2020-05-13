@@ -60,9 +60,15 @@ Then, you can choose to see the chart or the heatmap by clicking "Sentimental An
 ## How to Run This Code
 1. Type`git clone https://github.com/chijunyou/EC500Project_Tweeter_Analyzer.git` to your terminal to clone the repository.
 2. Type `cd EC500Project_Tweeter_Analyzer` to navigate into the project folder.
-3. Type `pip install -r requirements.txt` to run install modules.
-4. Type `python app.py` to deploy flask
-6. Navigate to `http://127.0.0.1:5000/`.
+3. Add your twitter API keys and Google map API key in to the `key`file.
+(for Twitter API problems, please visit: https://developer.twitter.com/en/docs)
+(for Google map API problem, please visit: https://developers.google.com/maps/documentation)
+4. Save your own Cloud Natural Language API key as a json file.
+5. For Windows user: type `set GOOGLE_APPLICATION_CREDENTIALS=[JSON_KEY_PATH]`; For Lunix or MacOS type `export GOOGLE_APPLICATION_CREDENTIALS="[JSON_KEY_PATH]"`.
+(for Google Cloud Natural Language API problem, please visit: https://cloud.google.com/natural-language/docs/quickstarts)
+6. Type `pip install -r requirements.txt` to run install modules.
+7. Type `python app.py` to deploy flask
+8. Navigate to `http://127.0.0.1:5000/`.
 
 ## References
 * https://css-tricks.com/separate-form-submit-buttons-go-different-urls/
@@ -73,3 +79,6 @@ Then, you can choose to see the chart or the heatmap by clicking "Sentimental An
 * https://blog.csdn.net/guoweish/article/details/47171733
 * https://jupyter-gmaps.readthedocs.io/en/latest/tutorial.html
 * https://www.tutorialspoint.com/plotting-google-map-using-gmplot-package-in-python
+* https://developer.twitter.com/en/docs
+* https://developers.google.com/maps/documentation
+* https://cloud.google.com/natural-language/docs/quickstarts)
