@@ -21,12 +21,14 @@ def getdata(keyword):
 
 def processdata(data):
     rtn = []
+    count = 0
     for tw in data:
         text = tw[0]
         location = tw[1]
         latitude = None
         longitude = None
-        geoloc = address(location)
+        if location:
+            geoloc = address(location)
         if geoloc:
             lat = geoloc[0]
             lng = geoloc[1]
@@ -37,8 +39,10 @@ def processdata(data):
             senti = 0
         if senti is not None and geoloc is not None:
             rtn.append((lat,lng,senti))
+        print("analyzed ", count," of 100")
+        count = count + 1
 
-    print(rtn)
+
     return rtn
 
 def address(location):
@@ -87,13 +91,25 @@ def chartdata(data):
         rtn[i] = str(rtn[i]) + '%'
     return rtn
 
+def chartapi(keyword):
+    rawdata = getdata(keyword)
+    data = processdata(rawdata)
+    data = chartdata(data)
+    savechar(data)
+
+def mapapi(keyword):
+    rawdata = getdata(keyword)
+    data = processdata(rawdata)
+    heatmap(data)
+
+
 def bothpro(keyword):
-    rawdata = getdata("trade war")
+    rawdata = getdata(keyword)
     data = processdata(rawdata)
     heatmap(data)
     data = chartdata(data)
     savechar(data)
 
 if __name__== '__main__':
-    all("trade war")
+    bothpro("trade war")
     #print(address('asdfsaf'))
