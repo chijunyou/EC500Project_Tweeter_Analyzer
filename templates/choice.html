@@ -1,0 +1,58 @@
+<head>
+	<style>
+		h1{
+			font-family:"Courier New Italic", Courier, monospace;
+			font-weight: bold;
+			font-stretch: extra-expanded;
+			text-align: center;
+			color: black;
+			font-size:40px;
+		}
+		body{
+			font-family:"Courier New Italic", Courier, monospace;
+			font-weight: bold;
+			font-size:25px;
+			font-stretch: extra-expanded;
+			text-align: center;
+			color: black;
+		}
+		
+    input[type=submit] {
+        background-color: #15B097;
+        border: none;
+        color: white;
+        font-size:20px;
+        padding: 8px 20px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    
+
+   
+    #map {
+    width: 100%;
+    height: 700px;
+    background-color: grey;
+    }
+
+		
+	</style>
+
+  <title>Search Term Opinions</title>
+    
+</head>
+<h1> Welcome to Use Twitter Data Analyzer </h1>
+<body>
+  <p>Choose Sentimental Analyzing or Geolocation Analyzing</p>
+  </body>
+
+<form action="/chart/">
+<input type="submit"name = "senti" value = "Sentimental Analyzing">
+</form>
+<form action="/geolocation/">
+<input type="submit"name = "geolo" value = "Geolocation Analyzing">
+</form>
+<form action="/search/">
+<input type="submit"name = "geolo" value = "Back to Search Page  ">
+</form>
