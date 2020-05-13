@@ -22,7 +22,7 @@ class MyListener(StreamListener):
                 #print(tweet)
                 self.count = self.count + 1
                 self.datalist.append((tweetext,geolocation))
-            print(self.count)
+            print("twitter number: ", self.count)
             if self.count >= 100:
                 return False
             
