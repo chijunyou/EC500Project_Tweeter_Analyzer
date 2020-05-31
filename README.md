@@ -82,7 +82,7 @@ Then, you can choose to see the chart or the heatmap by clicking "Sentimental An
 2. Here is to get the key for map product http://lbsyun.baidu.com/apiconsole/key?application=key#/home and create a new app (the orange button).
 3. For the app types, select "Browser Side"(). Type * in the whitelist.
 4. Copy the AK of the app list that you created into the baiduheatmap.html:
-'''<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=YOUR AK, SUBSTITUTE HERE"></script>'''
+`<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=YOUR AK, SUBSTITUTE HERE"></script>`
 
 ## How to Run This Code
 1. Type`git clone https://github.com/chijunyou/EC500Project_Tweeter_Analyzer.git` to your terminal to clone the repository.
