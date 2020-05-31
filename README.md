@@ -63,6 +63,27 @@ Then, you can choose to see the chart or the heatmap by clicking "Sentimental An
   百度地图 (baidu map）substitute Google Map
 2. Most of the features are similar with the Twitter+Google model, but there are also some features that has little bit differences. Detailed description will be dicussed in the next section. There are buttons from the web frontend for user to choose the Chinses veriosn option.
 
+### Instruction on Weibo
+1. Go to weibo.com and sign up a sina account. (If you have an account, skip to step 3)
+2. https://open.weibo.com/index.php go to the weibo developer page and click sign up or log in on the right upper part. Using the same account that applied on step 1.
+3. Once you successfully loged in, move the mouse to the upper right and the tab for developer information will pop up. Click the first choice to fill in enough developer information: (img:authentication)
+4. Click the "micro link" on the top menu and select "website access"(网站接入) , fill in the application name and select the type as "web-application"（网页应用）
+5. The application information page should be shown after step 4. This page is to authenticate the app, but it is optional, the app key and secret has already shown. Copy them to the getWeibo.py and things can be all set.
+
+### Instruction on Baidu NLP and Baidu Heatmap
+#### Baidu NLP
+1. Baidu NLP has sentimental analysis product: https://cloud.baidu.com/product/nlp_apply
+2. Go to the login link to login or sign up, there is english translation page. https://login.bce.baidu.com/?account=
+3. Clicking the sentimental analysis (情感分析） module: https://cloud.baidu.com/product/nlp_apply/sentiment_classify There is a blue button called "立即使用"(use immediately).
+4. Clicking "create app" button https://console.bce.baidu.com/ai/#/ai/nlp/overview/index and filling in the app information.
+5. The API key and secret key can be shown and copy them into the baiduNLP.py
+#### Baidu Heatmap
+1. Baidu Map related products are in: http://lbsyun.baidu.com/ and Baidu account can be directly used here.
+2. Here is to get the key for map product http://lbsyun.baidu.com/apiconsole/key?application=key#/home and create a new app (the orange button).
+3. For the app types, select "Browser Side"(). Type * in the whitelist.
+4. Copy the AK of the app list that you created into the baiduheatmap.html:
+'''<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=YOUR AK, SUBSTITUTE HERE"></script>'''
+
 ## How to Run This Code
 1. Type`git clone https://github.com/chijunyou/EC500Project_Tweeter_Analyzer.git` to your terminal to clone the repository.
 2. Type `cd EC500Project_Tweeter_Analyzer` to navigate into the project folder.
