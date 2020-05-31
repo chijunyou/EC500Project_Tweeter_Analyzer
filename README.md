@@ -57,6 +57,12 @@ Then, you can choose to see the chart or the heatmap by clicking "Sentimental An
 <img src="https://github.com/chijunyou/EC500Project_Tweeter_Analyzer/blob/master/pictures/analyze%20choice.png" /> 
 </p> 
 
+## Chinese Version
+1. For any reasons that makes the google and twitter related api not functioning (e.g: in China), we have a substitution:
+  微博（weibo, "microblog") substitute Twitter
+  百度地图 (baidu map）substitute Google Map
+2. Most of the features are similar with the Twitter+Google model, but there are also some features that has little bit differences. Detailed description will be dicussed in the next section. There are buttons from the web frontend for user to choose the Chinses veriosn option.
+
 ## How to Run This Code
 1. Type`git clone https://github.com/chijunyou/EC500Project_Tweeter_Analyzer.git` to your terminal to clone the repository.
 2. Type `cd EC500Project_Tweeter_Analyzer` to navigate into the project folder.
